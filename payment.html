@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hari Ram's Loan Payment</title>
+  </head>
+  <body>
+    <h1>Hari Ram's Loan Payment</h1>
+    <h2>Set up Automatic Payments</h2>
+    <form action="/setup_automatic_payments" method="post">
+      <label for="bank_name">Bank Name:</label>
+      <input type="text" id="bank_name" name="bank_name" required><br>
+
+      <label for="account_number">Account Number:</label>
+      <input type="text" id="account_number" name="account_number" required><br>
+
+      <label for="routing_number">Routing Number:</label>
+      <input type="text" id="routing_number" name="routing_number" required><br>
+
+      <button type="submit">Set up Automatic Payments</button>
+    </form>
+
+    <h2>Make a One-Time Payment</h2>
+    <form action="/make_one_time_payment" method="post">
+      <label for="loan_number">Loan Number:</label>
+      <input type="text" id="loan_number" name="loan_number" required><br>
+
+      <label for="payment_amount">Payment Amount:</label>
+      <input type="number" id="payment_amount" name="payment_amount" required><br>
+
+      <button type="submit">Make Payment</button>
+    </form>
+  </body>
+</html>
